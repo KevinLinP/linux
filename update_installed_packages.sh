@@ -1,0 +1,1 @@
+pacman -Qeq > INSTALLED_PACKAGES

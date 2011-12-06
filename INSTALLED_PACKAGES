@@ -53,6 +53,8 @@ less
 libva-driver-intel
 licenses
 linux
+linux-ck
+linux-ck-headers
 logrotate
 lvm2
 m4

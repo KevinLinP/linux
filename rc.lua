@@ -4,6 +4,7 @@ require("awful.autofocus")
 require("awful.rules")
 -- Widget and layout library
 require("wibox")
+require("vicious")
 -- Theme handling library
 require("beautiful")
 -- Notification library
@@ -39,7 +40,8 @@ end
 cmds = 
 { 
 	"synclient TouchPadOff=1",
-	"dex -a"
+	"dex -a",
+	"/home/kevin/scripts/color.sh"
 }
 
 -- Themes define colours, icons, and wallpapers
@@ -103,6 +105,10 @@ mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
 -- }}}
 
 -- {{{ Wibox
+
+netwidget = wibox.widget.textbox()
+vicious.register(netwidget, vicious.widgets.net, '<span color="#7F9F7F">${wlan0 down_mb}</span> <span color="#CC9393">${wlan0 up_mb}</span> ', 0.1)
+
 -- Create a textclock widget
 mytextclock = awful.widget.textclock()
 
@@ -180,6 +186,7 @@ for s = 1, screen.count() do
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
+    right_layout:add(netwidget)
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 

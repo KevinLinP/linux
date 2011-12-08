@@ -18,6 +18,7 @@ diffutils
 e2fsprogs
 exo
 fakeroot
+feh
 file
 filesystem
 findutils
@@ -33,11 +34,13 @@ gedit
 gettext
 git
 glibc
+gnome-mplayer
 grep
 grub
 gtk-chtheme
 gtk-theme-switch2
 gtk-xfce-engine
+gvim
 gzip
 heirloom-mailx
 htop
@@ -62,13 +65,19 @@ make
 man-db
 man-pages
 mdadm
+mesa
 minitube
 mplayer2
 nano
 ncdu
+ncftp
 ncurses
+networkmanager
+network-manager-applet
 ntfs-3g
+ntp
 openssh
+opera-next
 orage
 pacman
 patch
@@ -102,7 +111,6 @@ udev
 usbutils
 util-linux
 vi
-vim
 wget
 which
 wicd
@@ -112,7 +120,9 @@ wpa_actiond
 wpa_supplicant
 xarchiver
 xf86-input-synaptics
+xf86-video-fbdev
 xf86-video-intel
+xf86-video-vesa
 xfburn
 xfce4-appfinder
 xfce4-artwork
@@ -157,4 +167,5 @@ xfwm4
 xfwm4-themes
 xorg-server
 xorg-xgamma
+xscreensaver
 yaourt
